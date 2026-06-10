@@ -7,20 +7,22 @@ const mobileNav = document.getElementById("mobileNav");
 
 mobileMenuBtn.addEventListener("click", () => {
 
-    if (mobileNav.style.display === "flex") {
+    mobileNav.classList.toggle("mobile-nav-active");
 
-        mobileNav.style.display = "none";
+    if (mobileNav.classList.contains("mobile-nav-active")) {
+
+        mobileNav.style.display = "flex";
 
     } else {
 
-        mobileNav.style.display = "flex";
+        mobileNav.style.display = "none";
 
     }
 
 });
 
 // ============================================
-// CLOSE MOBILE MENU AFTER CLICK
+// CLOSE MOBILE NAVIGATION
 // ============================================
 
 const mobileLinks = document.querySelectorAll(".mobile-nav a");
@@ -30,35 +32,36 @@ mobileLinks.forEach(link => {
     link.addEventListener("click", () => {
 
         mobileNav.style.display = "none";
+        mobileNav.classList.remove("mobile-nav-active");
 
     });
 
 });
 
 // ============================================
-// STICKY NAV SHADOW EFFECT
+// STICKY HEADER SHADOW
 // ============================================
 
 window.addEventListener("scroll", () => {
 
     const header = document.querySelector(".main-header");
 
-    if(window.scrollY > 30){
+    if(window.scrollY > 40){
 
-        header.style.boxShadow = "0 8px 20px rgba(0,0,0,0.12)";
+        header.style.boxShadow = "0 12px 35px rgba(0,0,0,0.08)";
 
     }
 
     else{
 
-        header.style.boxShadow = "0 4px 18px rgba(0,0,0,0.08)";
+        header.style.boxShadow = "none";
 
     }
 
 });
 
 // ============================================
-// SIMPLE CONTACT FORM FEEDBACK
+// CONTACT FORM
 // ============================================
 
 const contactForm = document.querySelector(".contact-form");
@@ -67,14 +70,14 @@ contactForm.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    alert("Thank you for reaching out! Your message has been submitted.");
+    alert("Thank you for reaching out to Heads Up! Your message has been successfully submitted.");
 
     contactForm.reset();
 
 });
 
 // ============================================
-// ACTIVE NAVIGATION HIGHLIGHT
+// ACTIVE NAVIGATION LINK
 // ============================================
 
 const sections = document.querySelectorAll("section");
@@ -86,7 +89,7 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 150;
+        const sectionTop = section.offsetTop - 200;
 
         if(pageYOffset >= sectionTop){
 
@@ -111,7 +114,7 @@ window.addEventListener("scroll", () => {
 });
 
 // ============================================
-// AUTO SCROLL TO TOP BUTTON
+// SCROLL TO TOP BUTTON
 // ============================================
 
 const scrollBtn = document.createElement("button");
@@ -125,21 +128,22 @@ document.body.appendChild(scrollBtn);
 scrollBtn.style.position = "fixed";
 scrollBtn.style.bottom = "30px";
 scrollBtn.style.right = "30px";
-scrollBtn.style.width = "50px";
-scrollBtn.style.height = "50px";
+scrollBtn.style.width = "55px";
+scrollBtn.style.height = "55px";
 scrollBtn.style.borderRadius = "50%";
 scrollBtn.style.border = "none";
 scrollBtn.style.background = "#ffb703";
 scrollBtn.style.color = "#082b63";
-scrollBtn.style.fontSize = "1.3rem";
+scrollBtn.style.fontSize = "1.4rem";
 scrollBtn.style.fontWeight = "700";
 scrollBtn.style.cursor = "pointer";
 scrollBtn.style.display = "none";
 scrollBtn.style.zIndex = "999";
+scrollBtn.style.boxShadow = "0 10px 25px rgba(0,0,0,0.15)";
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 400){
+    if(window.scrollY > 500){
 
         scrollBtn.style.display = "block";
 
@@ -163,3 +167,80 @@ scrollBtn.addEventListener("click", () => {
     });
 
 });
+
+// ============================================
+// EMERGENCY BUTTON
+// ============================================
+
+const emergencyBtn = document.querySelector(".emergency-btn");
+
+emergencyBtn.addEventListener("click", () => {
+
+    alert("Emergency contact feature placeholder. Replace with actual emergency contact system.");
+
+});
+
+// ============================================
+// HERO CARD ANIMATION
+// ============================================
+
+const heroCard = document.querySelector(".hero-card");
+
+window.addEventListener("mousemove", (e) => {
+
+    const xAxis = (window.innerWidth / 2 - e.pageX) / 40;
+    const yAxis = (window.innerHeight / 2 - e.pageY) / 40;
+
+    heroCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+
+});
+
+// ============================================
+// FADE IN ON SCROLL
+// ============================================
+
+const fadeElements = document.querySelectorAll(
+
+    ".about-card, .program-card, .story-card, .resource-card, .team-card, .event-card"
+
+);
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0px)";
+
+        }
+
+    });
+
+}, {
+
+    threshold: 0.15
+
+});
+
+fadeElements.forEach(el => {
+
+    el.style.opacity = "0";
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all 0.8s ease";
+
+    observer.observe(el);
+
+});
+
+// ============================================
+// DYNAMIC WEEKLY UPDATE DATE
+// ============================================
+
+const updateDate = new Date();
+
+console.log(
+    "Weekly Updates Last Refreshed:",
+    updateDate.toDateString()
+);
