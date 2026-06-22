@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +31,7 @@
         content="Heads Up is a welcoming, community-centered afterschool program supporting learning, belonging, mentorship, and family engagement."
     >
 
-    <meta name="theme-color" content="#082b63">
+    <meta name="theme-color" content="#004aad">
 
     <title>Heads Up | Community Afterschool Program</title>
 
@@ -419,6 +418,33 @@
 
         </symbol>
 
+
+        <symbol id="icon-lock" viewBox="0 0 24 24">
+
+            <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+
+            <path d="M8 11V8a4 4 0 0 1 8 0v3"></path>
+
+        </symbol>
+
+
+        <symbol id="icon-unlock" viewBox="0 0 24 24">
+
+            <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+
+            <path d="M8 11V8a4 4 0 0 1 7.5-2"></path>
+
+        </symbol>
+
+
+        <symbol id="icon-globe" viewBox="0 0 24 24">
+
+            <circle cx="12" cy="12" r="10"></circle>
+
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"></path>
+
+        </symbol>
+
     </svg>
 
 
@@ -523,7 +549,7 @@
                     <span class="logo-frame">
 
                         <img
-                            src="C:\Users\Suyash D\Downloads\HeadsUp Logo cropped (1).png"
+                            src="logo.png"
                             alt="Heads Up program logo"
                             class="logo-image"
                         >
@@ -673,6 +699,14 @@
                     </div>
 
 
+
+                    <a
+                        href="#portal"
+                        class="nav-link nav-link--portal"
+                    >
+                        Family Portal
+                    </a>
+
                     <a
                         href="#contact"
                         class="nav-contact-button"
@@ -788,6 +822,15 @@
                         <span>05</span>
 
                         Events & Schedule
+
+                    </a>
+
+
+                    <a href="#portal">
+
+                        <span>05A</span>
+
+                        Family Portal
 
                     </a>
 
@@ -990,6 +1033,31 @@
                         </button>
 
                     </div>
+
+                    <div class="hero-privacy-note reveal">
+
+                        <span class="hero-privacy-note__icon" aria-hidden="true">
+
+                            <svg>
+
+                                <use href="#icon-lock"></use>
+
+                            </svg>
+
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Public-safe information first.
+                            </strong>
+
+                            Detailed schedules, times, locations, and child-related updates should be shared only through the Family Portal or approved private communication.
+
+                        </span>
+
+                    </div>
+
 
 
                     <!-- =============================================
@@ -2077,6 +2145,62 @@
                 </div>
 
 
+
+                <!-- =================================================
+                     PUBLIC-SAFE COMMUNICATION NOTICE
+
+                     This protects children and families by avoiding
+                     public display of exact times, locations, and
+                     student-specific details. Use a real authenticated
+                     portal before publishing private schedule data.
+                ================================================== -->
+
+                <div
+                    class="communication-privacy-notice reveal"
+                    role="note"
+                    aria-label="Private schedule and update notice"
+                >
+
+                    <div class="communication-privacy-notice__icon" aria-hidden="true">
+
+                        <svg>
+
+                            <use href="#icon-lock"></use>
+
+                        </svg>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="communication-privacy-notice__eyebrow">
+                            Child-safe communication
+                        </p>
+
+
+                        <h3>
+                            Public updates stay general. Detailed schedules are shared privately.
+                        </h3>
+
+
+                        <p>
+                            To protect students and families, the public website should not display exact program times, locations, attendance details, or child-specific updates. Families, volunteers, and approved team members should use the Family Portal or direct program communication for private information.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="#portal"
+                        class="button button--primary button--small"
+                    >
+                        Open Family Portal
+                    </a>
+
+                </div>
+
+
                 <!-- =================================================
                      IMPORTANT ANNOUNCEMENT STRIP
                 ================================================== -->
@@ -2380,6 +2504,211 @@
                         Contact Heads Up
 
                     </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FAMILY PORTAL / PRIVATE ACCESS SOLUTION
+
+             This section is intentionally added without removing the
+             existing website layout. It provides a professional,
+             child-safe solution for schedules and updates that should
+             not be public on the open internet.
+        ====================================================== -->
+
+        <section
+            class="portal-section section-spacing"
+            id="portal"
+            aria-labelledby="portalTitle"
+        >
+
+            <div class="section-shell">
+
+                <div class="section-heading section-heading--split reveal">
+
+                    <div>
+
+                        <p class="section-tag">
+                            Family Portal
+                        </p>
+
+
+                        <h2 id="portalTitle">
+                            Private schedule access for families and approved team members.
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        The public website should welcome visitors, explain the program, and make contact easy. Details such as exact meeting times, locations, student updates, and private announcements should be shared only through approved access.
+                    </p>
+
+                </div>
+
+
+                <div class="portal-grid">
+
+                    <article class="portal-card portal-card--primary reveal">
+
+                        <div class="portal-card__icon" aria-hidden="true">
+
+                            <svg>
+
+                                <use href="#icon-lock"></use>
+
+                            </svg>
+
+                        </div>
+
+
+                        <p class="card-kicker">
+                            Recommended solution
+                        </p>
+
+
+                        <h3>
+                            Use a real login system before publishing private details.
+                        </h3>
+
+
+                        <p>
+                            For the final live website, connect this portal button to an authenticated service such as Firebase Authentication, Supabase Auth, Google Workspace, Netlify Identity, or another approved organization login. The frontend should request private updates from a protected backend after a verified user signs in.
+                        </p>
+
+
+                        <ul class="portal-checklist">
+
+                            <li>
+                                <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+                                Keep exact times and locations out of public HTML, CSS, and JavaScript.
+                            </li>
+
+                            <li>
+                                <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+                                Share private schedules only with approved parents, guardians, volunteers, staff, and researchers.
+                            </li>
+
+                            <li>
+                                <svg aria-hidden="true"><use href="#icon-check"></use></svg>
+                                Continue using the public site for mission, contact, stories, resources, and general program updates.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="portal-card reveal">
+
+                        <p class="card-kicker">
+                            Portal sign-in placeholder
+                        </p>
+
+
+                        <h3>
+                            Frontend access preview
+                        </h3>
+
+
+                        <p>
+                            This form is a design placeholder only. It shows how the Family Portal can look, but it is not a secure login by itself. Replace it with the approved authentication system before posting private program details.
+                        </p>
+
+
+                        <form
+                            class="portal-login-form"
+                            id="portalLoginForm"
+                        >
+
+                            <label for="portalEmail">
+                                Email
+                            </label>
+
+
+                            <input
+                                id="portalEmail"
+                                name="portalEmail"
+                                type="email"
+                                placeholder="family@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+
+                            <label for="portalAccessCode">
+                                Access code
+                            </label>
+
+
+                            <input
+                                id="portalAccessCode"
+                                name="portalAccessCode"
+                                type="password"
+                                placeholder="Development preview code"
+                                autocomplete="current-password"
+                                required
+                            >
+
+
+                            <button
+                                type="submit"
+                                class="button button--primary"
+                            >
+                                Preview portal access
+                            </button>
+
+                        </form>
+
+
+                        <div
+                            class="portal-status"
+                            id="portalStatus"
+                            role="status"
+                            aria-live="polite"
+                        >
+
+                            Private details are hidden until approved access is connected.
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="portal-card portal-card--soft reveal">
+
+                        <p class="card-kicker">
+                            What belongs where
+                        </p>
+
+
+                        <h3>
+                            Public website vs. private portal
+                        </h3>
+
+
+                        <div class="portal-table">
+
+                            <div>
+                                <strong>Public website</strong>
+                                <span>Mission, general program overview, contact, approved stories, resources, volunteer interest, and broad updates.</span>
+                            </div>
+
+
+                            <div>
+                                <strong>Private portal</strong>
+                                <span>Exact schedules, locations, attendance details, child-specific updates, internal documents, and approved family notices.</span>
+                            </div>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -4181,6 +4510,8 @@
                 <a href="#updates">Weekly updates</a>
 
                 <a href="#events">Events & schedule</a>
+
+                <a href="#portal">Family Portal</a>
 
                 <a href="#resources">Resources</a>
 
