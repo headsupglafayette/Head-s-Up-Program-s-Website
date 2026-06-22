@@ -364,16 +364,19 @@ const weeklySchedule = [
             "Monday",
 
         time:
-            "4:00 PM – 6:00 PM",
+            "Shared privately",
 
         activity:
             "Homework Club",
 
         description:
-            "Academic support, check-in, and collaborative study.",
+            "Academic support and mentoring. Exact time and location should be shared through the Family Portal or approved family communication.",
 
         audience:
-            "Students"
+            "Students",
+
+        privateDetails:
+            true
 
     },
 
@@ -384,16 +387,19 @@ const weeklySchedule = [
             "Tuesday",
 
         time:
-            "4:00 PM – 6:00 PM",
+            "Shared privately",
 
         activity:
             "Homework Club & mentoring",
 
         description:
-            "Homework guidance, individual support, and peer learning.",
+            "Homework guidance, peer learning, and mentor support. Do not place child attendance details on the public website.",
 
         audience:
-            "Students"
+            "Students",
+
+        privateDetails:
+            true
 
     },
 
@@ -404,16 +410,19 @@ const weeklySchedule = [
             "Wednesday",
 
         time:
-            "5:00 PM – 6:30 PM",
+            "Shared privately",
 
         activity:
             "STEM or creative activity",
 
         description:
-            "Hands-on exploration, teamwork, and project learning.",
+            "Hands-on exploration, teamwork, and project learning. Families can sign in or contact the program for approved details.",
 
         audience:
-            "Students & mentors"
+            "Students & mentors",
+
+        privateDetails:
+            true
 
     },
 
@@ -424,16 +433,19 @@ const weeklySchedule = [
             "Thursday",
 
         time:
-            "4:00 PM – 6:00 PM",
+            "Shared privately",
 
         activity:
             "Homework Club & reflection",
 
         description:
-            "Academic support followed by sharing and reflection.",
+            "Academic support followed by reflection and sharing. Exact schedule information belongs in the private portal.",
 
         audience:
-            "Students"
+            "Students",
+
+        privateDetails:
+            true
 
     },
 
@@ -444,16 +456,19 @@ const weeklySchedule = [
             "Friday",
 
         time:
-            "Schedule varies",
+            "Shared privately",
 
         activity:
             "Community or family event",
 
         description:
-            "Use the Upcoming Events tab for the current activity.",
+            "Family events and community gatherings may be announced generally on the public website, while exact details stay private.",
 
         audience:
-            "Families & community"
+            "Families & community",
+
+        privateDetails:
+            true
 
     }
 
@@ -487,16 +502,16 @@ const upcomingEvents = [
             "Family Community Night",
 
         date:
-            "2026-06-19",
+            "2099-01-01",
 
         startTime:
-            "18:00",
+            "00:00",
 
         endTime:
-            "19:30",
+            "00:00",
 
         location:
-            "Placeholder Community Room",
+            "Shared through Family Portal",
 
         audience:
             "family",
@@ -504,38 +519,51 @@ const upcomingEvents = [
         audienceLabel:
             "Families",
 
+        privateDetails:
+            true,
+
+        publicDateLabel:
+            "Date shared privately",
+
+        publicTimeLabel:
+            "Time shared privately",
+
+        publicLocationLabel:
+            "Location shared privately",
+
         summary:
-            "A welcoming evening for families to connect with mentors, learn about current activities, and share feedback.",
+            "A family-centered gathering is planned. Approved families can receive exact time and location through the private portal or direct program communication.",
 
         details:
             `
                 <p>
-                    Family Community Night creates a direct
-                    communication space for parents, guardians,
-                    staff, mentors, and researchers.
+                    This event listing is public-safe by design.
+                    Exact times, location, and child-related details
+                    should not be published openly online.
                 </p>
 
                 <h3>
-                    What to expect
+                    Public-safe information
                 </h3>
 
                 <ul>
                     <li>
-                        Program and schedule updates
+                        Family connection and communication
                     </li>
 
                     <li>
-                        Student activity highlights
+                        Program updates and approved activity highlights
                     </li>
 
                     <li>
-                        Questions and family feedback
-                    </li>
-
-                    <li>
-                        Community conversation
+                        Questions, support needs, and feedback
                     </li>
                 </ul>
+
+                <p>
+                    Families should use the Family Portal or contact the
+                    program directly for approved private details.
+                </p>
             `
 
     },
@@ -550,16 +578,16 @@ const upcomingEvents = [
             "Student STEM Discovery Lab",
 
         date:
-            "2026-06-24",
+            "2099-01-01",
 
         startTime:
-            "17:00",
+            "00:00",
 
         endTime:
-            "18:30",
+            "00:00",
 
         location:
-            "Placeholder Activity Space",
+            "Shared through Family Portal",
 
         audience:
             "student",
@@ -567,21 +595,33 @@ const upcomingEvents = [
         audienceLabel:
             "Students",
 
+        privateDetails:
+            true,
+
+        publicDateLabel:
+            "Date shared privately",
+
+        publicTimeLabel:
+            "Time shared privately",
+
+        publicLocationLabel:
+            "Location shared privately",
+
         summary:
-            "A hands-on activity focused on observation, problem-solving, and collaborative exploration.",
+            "A hands-on activity is planned for students. Public information stays general while private schedule details remain protected.",
 
         details:
             `
                 <p>
-                    This event reflects research showing that students
-                    are especially engaged during hands-on, social,
-                    and exploratory learning.
+                    This event reflects the research finding that students
+                    are especially engaged during hands-on, social, and
+                    exploratory learning.
                 </p>
 
                 <p>
-                    Replace the activity description, materials,
-                    and participation requirements with approved
-                    event information.
+                    Replace this public-safe description with approved
+                    language. Keep exact time, location, student names,
+                    and attendance information inside the private system.
                 </p>
             `
 
@@ -597,16 +637,16 @@ const upcomingEvents = [
             "Volunteer & Mentor Orientation",
 
         date:
-            "2026-06-27",
+            "2099-01-01",
 
         startTime:
-            "10:30",
+            "00:00",
 
         endTime:
-            "12:00",
+            "00:00",
 
         location:
-            "Placeholder Meeting Location",
+            "Shared after approval",
 
         audience:
             "volunteer",
@@ -614,15 +654,28 @@ const upcomingEvents = [
         audienceLabel:
             "Volunteers",
 
+        privateDetails:
+            true,
+
+        publicDateLabel:
+            "Date shared after approval",
+
+        publicTimeLabel:
+            "Time shared after approval",
+
+        publicLocationLabel:
+            "Location shared after approval",
+
         summary:
-            "An onboarding session covering roles, expectations, communication, privacy, and student-centered mentoring.",
+            "Orientation information is available for approved volunteers and mentors. Use the contact form or portal pathway for next steps.",
 
         details:
             `
                 <p>
-                    Use this event for new volunteer onboarding.
-                    Add required forms, preparation instructions,
-                    parking information, and the correct contact person.
+                    Volunteer onboarding can be introduced publicly,
+                    but internal meeting locations, private documents,
+                    and participant details should be shared only after
+                    approval.
                 </p>
 
                 <h3>
@@ -660,16 +713,16 @@ const upcomingEvents = [
             "Community Project Showcase",
 
         date:
-            "2026-07-10",
+            "2099-01-01",
 
         startTime:
-            "17:30",
+            "00:00",
 
         endTime:
-            "19:00",
+            "00:00",
 
         location:
-            "Placeholder Showcase Location",
+            "Shared through approved communication",
 
         audience:
             "everyone",
@@ -677,20 +730,32 @@ const upcomingEvents = [
         audienceLabel:
             "Everyone",
 
+        privateDetails:
+            true,
+
+        publicDateLabel:
+            "Date shared privately",
+
+        publicTimeLabel:
+            "Time shared privately",
+
+        publicLocationLabel:
+            "Location shared privately",
+
         summary:
-            "Students share projects, learning moments, and collaborative work with families and community members.",
+            "Students may share approved projects and learning moments with families and community members. Detailed attendance information remains private.",
 
         details:
             `
                 <p>
-                    The showcase gives students an opportunity to
-                    explain what they learned, demonstrate tools
-                    or projects, and celebrate shared progress.
+                    A showcase is a strong way to represent student
+                    learning, excitement, and collaboration.
                 </p>
 
                 <p>
                     Only display approved student names, photos,
-                    and project details.
+                    and project details. Keep exact attendance and
+                    location details outside of the public source code.
                 </p>
             `
 
@@ -705,13 +770,13 @@ const upcomingEvents = [
 
 const announcementMessages = [
 
-    "Check this section each week for schedule changes, family reminders, activities, and program news.",
+    "Public updates stay general. Exact schedules, times, locations, and student-specific details belong in the Family Portal.",
 
-    "The Weekly Schedule and Upcoming Events are organized together to make important information easier to find.",
+    "Families and approved team members should use the private portal or direct program communication for detailed schedule information.",
 
-    "Need help? Contact information and the emergency number remain available throughout the website.",
+    "Need help? Contact information and the emergency number remain easy to find throughout the website.",
 
-    "Use approved photos, stories, and student information before publishing community highlights."
+    "Use only approved photos, stories, and student information before publishing community highlights."
 
 ];
 
@@ -4645,13 +4710,51 @@ const renderUpcomingEvents = (
 
             (event) => {
 
+                const isPrivate =
+
+                    event.privateDetails === true;
+
+
                 const date =
 
-                    formatEventDate(
+                    isPrivate
 
-                        event.date
+                        ? {
 
-                    );
+                            day:
+                                "Private",
+
+                            month:
+                                "Info",
+
+                            long:
+                                event.publicDateLabel || "Shared privately"
+
+                        }
+
+                        : formatEventDate(
+
+                            event.date
+
+                        );
+
+
+                const timeLabel =
+
+                    isPrivate
+
+                        ? event.publicTimeLabel || "Shared privately"
+
+                        : `${formatTime(event.startTime)} – ${formatTime(event.endTime)}`;
+
+
+                const locationLabel =
+
+                    isPrivate
+
+                        ? event.publicLocationLabel || "Shared privately"
+
+                        : event.location;
 
 
                 return `
@@ -4720,9 +4823,7 @@ const renderUpcomingEvents = (
 
                                 </svg>
 
-                                ${escapeHtml(formatTime(event.startTime))}
-                                –
-                                ${escapeHtml(formatTime(event.endTime))}
+                                ${escapeHtml(timeLabel)}
 
                             </span>
 
@@ -4734,7 +4835,7 @@ const renderUpcomingEvents = (
 
                                 </svg>
 
-                                ${escapeHtml(event.location)}
+                                ${escapeHtml(locationLabel)}
 
                             </span>
 
@@ -4758,11 +4859,13 @@ const renderUpcomingEvents = (
 
                                 type="button"
 
+                                data-private-trigger="event"
+
                                 data-event-calendar="${escapeHtml(event.id)}"
 
                             >
 
-                                Add to calendar
+                                Request details
 
                             </button>
 
@@ -4837,6 +4940,24 @@ const downloadCalendarEvent = (
     eventData
 
 ) => {
+
+    if (
+
+        eventData.privateDetails === true
+
+    ) {
+
+        openFamilyPortalNotice(
+
+            "Calendar details are intentionally private. Please use the Family Portal or contact the program for approved event details."
+
+        );
+
+
+        return;
+
+    }
+
 
     const startDate = createLocalDate(
 
@@ -7593,3 +7714,767 @@ if (
     });
 
 }
+
+
+
+
+/* =============================================================
+   41. CHILD-SAFE PAGE ROUTING AND FAMILY PORTAL PATCH
+
+   WHY THIS WAS ADDED
+   -------------------------------------------------------------
+   Feedback requested that the website should not feel like one
+   endless scrolling page. This patch keeps the existing sections
+   and design, but turns the major navigation links into page-like
+   views. Visitors click a link and the website shows the relevant
+   section instead of forcing them to scroll through everything.
+
+   CHILD SAFETY AND PRIVACY SOLUTION
+   -------------------------------------------------------------
+   A public website should not contain private schedules, exact
+   child-related locations, attendance information, or sensitive
+   updates in HTML, CSS, or JavaScript. This frontend includes a
+   Family Portal design placeholder, but the final live version
+   should connect to a real authentication system and backend.
+============================================================= */
+
+const routeMap = {
+
+    "#home": [
+
+        "home",
+
+        "about",
+
+        "updates",
+
+        "contact"
+
+    ],
+
+    "#about": [
+
+        "about",
+
+        "contact"
+
+    ],
+
+    "#programs": [
+
+        "programs",
+
+        "contact"
+
+    ],
+
+    "#updates": [
+
+        "updates",
+
+        "portal",
+
+        "contact"
+
+    ],
+
+    "#events": [
+
+        "updates",
+
+        "portal",
+
+        "contact"
+
+    ],
+
+    "#portal": [
+
+        "portal",
+
+        "updates",
+
+        "contact"
+
+    ],
+
+    "#gallery": [
+
+        "gallery",
+
+        "stories",
+
+        "contact"
+
+    ],
+
+    "#stories": [
+
+        "stories",
+
+        "gallery",
+
+        "contact"
+
+    ],
+
+    "#resources": [
+
+        "resources",
+
+        "faq",
+
+        "contact"
+
+    ],
+
+    "#team": [
+
+        "team",
+
+        "stories",
+
+        "contact"
+
+    ],
+
+    "#faq": [
+
+        "faq",
+
+        "resources",
+
+        "contact"
+
+    ],
+
+    "#contact": [
+
+        "contact"
+
+    ]
+
+};
+
+
+const pageRouteSections = selectAll(
+
+    "main > section[id]"
+
+);
+
+
+const normalizeRouteHash = (
+
+    hash
+
+) => {
+
+    if (
+
+        !hash
+
+        || hash === "#"
+
+    ) {
+
+        return "#home";
+
+    }
+
+
+    return routeMap[hash]
+
+        ? hash
+
+        : "#home";
+
+};
+
+
+const updateRouteVisibility = (
+
+    hashValue = window.location.hash
+
+) => {
+
+    const routeHash =
+
+        normalizeRouteHash(
+
+            hashValue
+
+        );
+
+
+    const visibleIds =
+
+        routeMap[routeHash];
+
+
+    document.body.classList.add(
+
+        "page-routing-enabled"
+
+    );
+
+
+    pageRouteSections.forEach(
+
+        (section) => {
+
+            const visible =
+
+                visibleIds.includes(
+
+                    section.id
+
+                );
+
+
+            section.hidden =
+
+                !visible;
+
+
+            section.classList.toggle(
+
+                "is-route-visible",
+
+                visible
+
+            );
+
+
+            section.classList.toggle(
+
+                "is-route-hidden",
+
+                !visible
+
+            );
+
+        }
+
+    );
+
+
+    if (
+
+        routeHash === "#events"
+
+    ) {
+
+        activateHubTab(
+
+            "events"
+
+        );
+
+    }
+
+
+    if (
+
+        routeHash === "#updates"
+
+    ) {
+
+        activateHubTab(
+
+            "updates"
+
+        );
+
+    }
+
+
+    if (
+
+        routeHash === "#portal"
+
+    ) {
+
+        updatePortalStatus(
+
+            "Portal access is a frontend preview. Connect a real login before publishing private schedules."
+
+        );
+
+    }
+
+
+    const routeTarget =
+
+        routeHash === "#events"
+
+            ? select(
+
+                "#updates"
+
+            )
+
+            : select(
+
+                routeHash
+
+            );
+
+
+    if (
+
+        routeTarget
+
+    ) {
+
+        window.setTimeout(
+
+            () => {
+
+                routeTarget.scrollIntoView({
+
+                    behavior:
+                        prefersReducedMotion
+
+                            ? "auto"
+
+                            : "smooth",
+
+                    block:
+                        "start"
+
+                });
+
+            },
+
+            35
+
+        );
+
+    }
+
+
+    updateNavigationCurrentStates(
+
+        routeHash
+
+    );
+
+};
+
+
+const updateNavigationCurrentStates = (
+
+    routeHash
+
+) => {
+
+    const allRouteLinks = selectAll(
+
+        "a[href^='#']"
+
+    ).filter(
+
+        (link) => routeMap[link.getAttribute("href")]
+
+    );
+
+
+    allRouteLinks.forEach(
+
+        (link) => {
+
+            const href =
+
+                link.getAttribute(
+
+                    "href"
+
+                );
+
+
+            const active =
+
+                href === routeHash
+
+                || (
+
+                    routeHash === "#events"
+
+                    && href === "#updates"
+
+                );
+
+
+            link.classList.toggle(
+
+                "is-route-current",
+
+                active
+
+            );
+
+
+            if (
+
+                active
+
+            ) {
+
+                link.setAttribute(
+
+                    "aria-current",
+
+                    "page"
+
+                );
+
+            } else {
+
+                link.removeAttribute(
+
+                    "aria-current"
+
+                );
+
+            }
+
+        }
+
+    );
+
+};
+
+
+/* =============================================================
+   42. FAMILY PORTAL FRONTEND PLACEHOLDER
+
+   IMPORTANT:
+   This is NOT a secure login. It is a visual/frontend preview
+   that explains how private access should work. For a real
+   deployment, do not put exact private schedule data in this file.
+============================================================= */
+
+const portalLoginForm = select(
+
+    "#portalLoginForm"
+
+);
+
+
+const portalStatus = select(
+
+    "#portalStatus"
+
+);
+
+
+const DEMO_PORTAL_CODE =
+
+    "HEADSUP-DEMO";
+
+
+const updatePortalStatus = (
+
+    message,
+
+    type = "info"
+
+) => {
+
+    if (
+
+        !portalStatus
+
+    ) {
+
+        return;
+
+    }
+
+
+    portalStatus.textContent =
+
+        message;
+
+
+    portalStatus.dataset.status =
+
+        type;
+
+};
+
+
+const openFamilyPortalNotice = (
+
+    message = "Private event details should be shared through the Family Portal or approved direct communication."
+
+) => {
+
+    window.location.hash =
+
+        "#portal";
+
+
+    updateRouteVisibility(
+
+        "#portal"
+
+    );
+
+
+    updatePortalStatus(
+
+        message,
+
+        "warning"
+
+    );
+
+
+    showToast({
+
+        title:
+            "Private details protected",
+
+        message,
+
+        type:
+            "warning"
+
+    });
+
+};
+
+
+portalLoginForm?.addEventListener(
+
+    "submit",
+
+    (event) => {
+
+        event.preventDefault();
+
+
+        const formData =
+
+            new FormData(
+
+                portalLoginForm
+
+            );
+
+
+        const accessCode =
+
+            String(
+
+                formData.get(
+
+                    "portalAccessCode"
+
+                ) || ""
+
+            )
+
+                .trim();
+
+
+        if (
+
+            accessCode === DEMO_PORTAL_CODE
+
+        ) {
+
+            updatePortalStatus(
+
+                "Preview access opened. In the final website, this area should be powered by real authentication and a protected backend database.",
+
+                "success"
+
+            );
+
+
+            showToast({
+
+                title:
+                    "Portal preview opened",
+
+                message:
+                    "This confirms the user flow only. Replace it with real authentication before publishing private details.",
+
+                type:
+                    "success"
+
+            });
+
+        } else {
+
+            updatePortalStatus(
+
+                "Access was not opened. For real use, families and approved team members should receive access through the official program process.",
+
+                "warning"
+
+            );
+
+
+            showToast({
+
+                title:
+                    "Portal access needed",
+
+                message:
+                    "Use the official program contact path for schedule details.",
+
+                type:
+                    "warning"
+
+            });
+
+        }
+
+    }
+
+);
+
+
+/* =============================================================
+   43. PROTECT PRIVATE DETAIL ACTIONS
+============================================================= */
+
+document.addEventListener(
+
+    "click",
+
+    (event) => {
+
+        const privateTrigger =
+
+            event.target.closest(
+
+                "[data-private-trigger]"
+
+            );
+
+
+        if (
+
+            !privateTrigger
+
+        ) {
+
+            return;
+
+        }
+
+
+        event.preventDefault();
+
+
+        openFamilyPortalNotice(
+
+            "This action leads to private schedule information. Please use the Family Portal or contact the program for approved details."
+
+        );
+
+    }
+
+);
+
+
+/* =============================================================
+   44. ROUTE INITIALIZATION
+
+   This runs after the original website initialization so it
+   preserves all current rendering, animations, modals, filters,
+   forms, gallery controls, and existing layout behavior.
+============================================================= */
+
+window.addEventListener(
+
+    "hashchange",
+
+    () => updateRouteVisibility(
+
+        window.location.hash
+
+    )
+
+);
+
+
+selectAll(
+
+    "a[href^='#']"
+
+).forEach(
+
+    (link) => {
+
+        const href =
+
+            link.getAttribute(
+
+                "href"
+
+            );
+
+
+        if (
+
+            routeMap[href]
+
+        ) {
+
+            link.addEventListener(
+
+                "click",
+
+                () => {
+
+                    if (typeof closeMobileNavigation === 'function') { closeMobileNavigation(); }
+
+
+                    window.setTimeout(
+
+                        () => updateRouteVisibility(
+
+                            href
+
+                        ),
+
+                        10
+
+                    );
+
+                }
+
+            );
+
+        }
+
+    }
+
+);
+
+
+updateRouteVisibility(
+
+    window.location.hash || "#home"
+
+);
+
+
+/* =============================================================
+   45. FINAL SAFETY NOTE IN CONSOLE
+
+   This helps future maintainers remember not to paste sensitive
+   program details directly into public source files.
+============================================================= */
+
+console.info(
+
+    "Heads Up privacy reminder: keep exact schedules, locations, and child-specific updates out of public source code. Use a real authenticated backend for private details."
+
+);
